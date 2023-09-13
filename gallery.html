@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='./gallery.css' rel="stylesheet">
+    <title>Gallery</title>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="media-cont">
+            <div class="media">
+                <video autoplay></video>
+            </div>
+            <div class="download action-btn">Download</div>
+            <div class="delete action-btn">Delete</div>
+        </div>
+    </div>
+    <div class="back">Back</div>
+
+    <script>
+        let backElem = document.querySelector(".back");
+        backElem.addEventListener("click", (e) => {
+            location.assign('./index.html')
+        })
+    </script>
+    <script src="./db.js"></script>
+    <script src="./gallery.js"></script>
+</body>
+
+</html>

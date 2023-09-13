@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Web Cam</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 </head>
 <body>
     <div class="video-container">
@@ -28,7 +30,19 @@
         <div class="filter transparent"></div>
     </div>
     <div class="filter-layer"></div>
-    
+
+    <span class="material-icons gallery">
+        collections
+    </span>
+
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="/db.js"></script>
     <script src="script.js"></script>
+    <script>
+        let gallery = document.querySelector(".gallery");
+        gallery.addEventListener("click", (e)=>{
+            location.assign('./gallery.html')
+        })
+    </script>
 </body>
 </html>
