@@ -55,6 +55,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.action-btn:hover{
+    cursor: pointer;
+}
 .download{
     background-color: black;
 }
